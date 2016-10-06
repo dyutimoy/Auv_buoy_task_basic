@@ -59,7 +59,7 @@ Mat rgb_detect(Mat img, int _hmax_y, int _hmin_y, int _smax_y, int _smin_y, int 
 
 	// Combine the above two images
 	Mat output;
-	addWeighted(yellow, 0.5, red, 0.5, 0.0, output);
+	addWeighted(yellow, 0.25, red, 0.75, 0.0, output);
 
 	//imshow("output_hsv_img",hsv);
 	return output;
